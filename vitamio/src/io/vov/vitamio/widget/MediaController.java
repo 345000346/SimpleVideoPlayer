@@ -89,7 +89,7 @@ public class MediaController extends FrameLayout {
     private TextView mDownSpeed;
     private OutlineTextView mInfoView;
     private String mTitle;
-    private String mSpeed;
+    private double mSpeed;
     private long mDuration;
     private boolean mShowing;
     private boolean mDragging;
@@ -296,10 +296,10 @@ public class MediaController extends FrameLayout {
             mFileName.setText(mTitle);
     }
 
-    public void setDownSpeed(String downSpeed) {
+    public void setDownSpeed(double downSpeed) {
         mSpeed = downSpeed;
         if (mDownSpeed != null)
-            mDownSpeed.setText(mSpeed);
+            mDownSpeed.setText(downSpeed +"KB/s");
     }
 
     /**
@@ -516,6 +516,7 @@ public class MediaController extends FrameLayout {
         boolean isPlaying();
 
         int getBufferPercentage();
+
     }
 
 }

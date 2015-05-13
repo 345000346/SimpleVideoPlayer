@@ -33,6 +33,7 @@ import io.vov.vitamio.MediaPlayer;
 import io.vov.vitamio.widget.MediaController;
 import io.vov.vitamio.widget.VideoView;
 
+
 public class VideoViewPlayer extends Activity implements MediaPlayer.OnPreparedListener, MediaPlayer.OnInfoListener, MediaPlayer.OnBufferingUpdateListener {
 
     /**
@@ -128,7 +129,7 @@ public class VideoViewPlayer extends Activity implements MediaPlayer.OnPreparedL
                 //显示 下载速度
 //                Log.e("download rate:" + arg2);
 //                mListener.onDownloadRateChanged(arg2);
-                mMediaController.setDownSpeed(arg2+"KB/s");
+                mMediaController.setDownSpeed(arg2);
                 break;
         }
         return true;

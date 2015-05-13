@@ -22,7 +22,7 @@
     </string>
     <string name="permission_write_providers_label">Write Vitamio providers</string>
     <string name="vitamio_init_decoders">Initializing decoders…</string>
-    <string name="vitamio_library_app_name">VitamioLibrary</string>
+    <string name="vitamio_library_app_name" translatable="false">VitamioLibrary</string>
     <!-- From: file:/E:/SimpleVideoPlayer/vitamio/res/values/styles.xml -->
     <eat-comment/>
     <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">

@@ -20,7 +20,7 @@
     </string>
     <string name="permission_write_providers_label">Write Vitamio providers</string>
     <string name="vitamio_init_decoders">Initializing decoders…</string>
-    <string name="vitamio_library_app_name">VitamioLibrary</string>
+    <string name="vitamio_library_app_name" translatable="false">VitamioLibrary</string>
     <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
         <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
         <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>

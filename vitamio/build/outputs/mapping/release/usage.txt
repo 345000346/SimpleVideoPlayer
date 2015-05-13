@@ -1,0 +1,259 @@
+io.vov.vitamio.BuildConfig
+io.vov.vitamio.EGL
+io.vov.vitamio.EGL$1
+io.vov.vitamio.EGL$ComponentSizeChooser
+io.vov.vitamio.EGL$EGLConfigChooser
+io.vov.vitamio.EGL$EGLContextFactory
+io.vov.vitamio.EGL$EGLWindowSurfaceFactory
+io.vov.vitamio.EGL$SimpleEGLConfigChooser
+io.vov.vitamio.LibsChecker
+io.vov.vitamio.MediaFile:
+    public static final int FILE_TYPE_MP3
+    public static final int FILE_TYPE_M4A
+    public static final int FILE_TYPE_WAV
+    public static final int FILE_TYPE_AMR
+    public static final int FILE_TYPE_AWB
+    public static final int FILE_TYPE_WMA
+    public static final int FILE_TYPE_OGG
+    public static final int FILE_TYPE_AAC
+    public static final int FILE_TYPE_MKA
+    public static final int FILE_TYPE_MID
+    public static final int FILE_TYPE_SMF
+    public static final int FILE_TYPE_IMY
+    public static final int FILE_TYPE_APE
+    public static final int FILE_TYPE_FLAC
+    private static final int FIRST_AUDIO_FILE_TYPE
+    private static final int LAST_AUDIO_FILE_TYPE
+    public static final int FILE_TYPE_MP4
+    public static final int FILE_TYPE_M4V
+    public static final int FILE_TYPE_3GPP
+    public static final int FILE_TYPE_3GPP2
+    public static final int FILE_TYPE_WMV
+    public static final int FILE_TYPE_ASF
+    public static final int FILE_TYPE_MKV
+    public static final int FILE_TYPE_MP2TS
+    public static final int FILE_TYPE_FLV
+    public static final int FILE_TYPE_MOV
+    public static final int FILE_TYPE_RM
+    public static final int FILE_TYPE_DVD
+    public static final int FILE_TYPE_DIVX
+    public static final int FILE_TYPE_OGV
+    public static final int FILE_TYPE_VIVO
+    public static final int FILE_TYPE_WTV
+    public static final int FILE_TYPE_AVS
+    public static final int FILE_TYPE_SWF
+    public static final int FILE_TYPE_RAW
+    private static final int FIRST_VIDEO_FILE_TYPE
+    private static final int LAST_VIDEO_FILE_TYPE
+    24:66:public MediaFile()
+    156:156:public static boolean isAudioFileType(int)
+io.vov.vitamio.MediaFormat:
+    public static final java.lang.String KEY_MIME
+    public static final java.lang.String KEY_LANGUAGE
+    public static final java.lang.String KEY_TITLE
+    public static final java.lang.String KEY_PATH
+    public static final java.lang.String KEY_SAMPLE_RATE
+    public static final java.lang.String KEY_CHANNEL_COUNT
+    public static final java.lang.String KEY_WIDTH
+    public static final java.lang.String KEY_HEIGHT
+    public static final java.lang.String KEY_MAX_WIDTH
+    public static final java.lang.String KEY_MAX_HEIGHT
+    public static final java.lang.String KEY_MAX_INPUT_SIZE
+    public static final java.lang.String KEY_BIT_RATE
+    public static final java.lang.String KEY_COLOR_FORMAT
+    public static final java.lang.String KEY_FRAME_RATE
+    public static final java.lang.String KEY_I_FRAME_INTERVAL
+    public static final java.lang.String KEY_STRIDE
+    public static final java.lang.String KEY_SLICE_HEIGHT
+    public static final java.lang.String KEY_REPEAT_PREVIOUS_FRAME_AFTER
+    public static final java.lang.String KEY_PUSH_BLANK_BUFFERS_ON_STOP
+    public static final java.lang.String KEY_DURATION
+    public static final java.lang.String KEY_IS_ADTS
+    public static final java.lang.String KEY_CHANNEL_MASK
+    public static final java.lang.String KEY_AAC_PROFILE
+    public static final java.lang.String KEY_FLAC_COMPRESSION_LEVEL
+    public static final java.lang.String KEY_IS_AUTOSELECT
+    public static final java.lang.String KEY_IS_DEFAULT
+    public static final java.lang.String KEY_IS_FORCED_SUBTITLE
+    265:267:MediaFormat(java.util.Map)
+    277:277:java.util.Map getMap()
+    284:284:public final boolean containsKey(java.lang.String)
+    291:291:public final int getInteger(java.lang.String)
+    301:305:public final int getInteger(java.lang.String,int)
+    312:312:public final long getLong(java.lang.String)
+    319:319:public final float getFloat(java.lang.String)
+    333:333:public final java.nio.ByteBuffer getByteBuffer(java.lang.String)
+    340:341:public final void setInteger(java.lang.String,int)
+    347:348:public final void setLong(java.lang.String,long)
+    354:355:public final void setFloat(java.lang.String,float)
+    368:369:public final void setByteBuffer(java.lang.String,java.nio.ByteBuffer)
+    381:386:public static final io.vov.vitamio.MediaFormat createAudioFormat(java.lang.String,int,int)
+    417:422:public static final io.vov.vitamio.MediaFormat createVideoFormat(java.lang.String,int,int)
+io.vov.vitamio.MediaPlayer$TrackInfo:
+    public static final int MEDIA_TRACK_TYPE_UNKNOWN
+    public static final int MEDIA_TRACK_TYPE_VIDEO
+    public static final int MEDIA_TRACK_TYPE_AUDIO
+    public static final int MEDIA_TRACK_TYPE_TIMEDTEXT
+    public static final int MEDIA_TRACK_TYPE_SUBTITLE
+io.vov.vitamio.Metadata:
+    public static final int ANY
+    public static final int TITLE
+    public static final int COMMENT
+    public static final int COPYRIGHT
+    public static final int ALBUM
+    public static final int ARTIST
+    public static final int AUTHOR
+    public static final int COMPOSER
+    public static final int GENRE
+    public static final int DATE
+    public static final int DURATION
+    public static final int CD_TRACK_NUM
+    public static final int CD_TRACK_MAX
+    public static final int RATING
+    public static final int ALBUM_ART
+    public static final int VIDEO_FRAME
+    public static final int LENGTH
+    public static final int BIT_RATE
+    public static final int AUDIO_BIT_RATE
+    public static final int VIDEO_BIT_RATE
+    public static final int AUDIO_SAMPLE_RATE
+    public static final int VIDEO_FRAME_RATE
+    public static final int MIME_TYPE
+    public static final int AUDIO_CODEC
+    public static final int VIDEO_CODEC
+    public static final int VIDEO_HEIGHT
+    public static final int VIDEO_WIDTH
+    public static final int NUM_TRACKS
+    public static final int DRM_CRIPPLED
+    public static final int PAUSE_AVAILABLE
+    public static final int SEEK_BACKWARD_AVAILABLE
+    public static final int SEEK_FORWARD_AVAILABLE
+    public static final int SEEK_AVAILABLE
+    private static final int LAST_SYSTEM
+    private static final int FIRST_CUSTOM
+    161:164:public boolean has(int)
+    168:175:public java.lang.String getString(int)
+    181:183:public int getInt(int)
+    189:191:public boolean getBoolean(int)
+    197:199:public long getLong(int)
+    205:207:public double getDouble(int)
+    212:212:public byte[] getByteArray(int)
+    216:219:private boolean checkMetadataId(int)
+io.vov.vitamio.ThumbnailUtils
+io.vov.vitamio.VIntent
+io.vov.vitamio.activity.InitActivity:
+    public static final java.lang.String FROM_ME
+io.vov.vitamio.provider.MediaStore:
+    public static final java.lang.String AUTHORITY
+    public static final java.lang.String MEDIA_SCANNER_VOLUME
+    public static final java.lang.String CONTENT_AUTHORITY_SLASH
+    private static final java.lang.String BASE_SQL_FIELDS
+    36:196:public MediaStore()
+    56:56:public static android.net.Uri getMediaScannerUri()
+    60:60:public static android.net.Uri getVolumeUri()
+io.vov.vitamio.provider.MediaStore$Audio
+io.vov.vitamio.provider.MediaStore$Audio$AudioColumns
+io.vov.vitamio.provider.MediaStore$Audio$Media
+io.vov.vitamio.provider.MediaStore$InternalThumbnails
+io.vov.vitamio.provider.MediaStore$MediaColumns:
+    public static final java.lang.String DATA
+    public static final java.lang.String DIRECTORY
+    public static final java.lang.String DIRECTORY_NAME
+    public static final java.lang.String SIZE
+    public static final java.lang.String DISPLAY_NAME
+    public static final java.lang.String TITLE
+    public static final java.lang.String TITLE_KEY
+    public static final java.lang.String DATE_ADDED
+    public static final java.lang.String DATE_MODIFIED
+    public static final java.lang.String MIME_TYPE
+    public static final java.lang.String AVAILABLE_SIZE
+    public static final java.lang.String PLAY_STATUS
+io.vov.vitamio.provider.MediaStore$Video:
+    96:150:public MediaStore$Video()
+io.vov.vitamio.provider.MediaStore$Video$Media:
+    public static final java.lang.String CONTENT_TYPE
+    protected static final java.lang.String TABLE_NAME
+    protected static final java.lang.String SQL_FIELDS
+    protected static final java.lang.String SQL_TRIGGER_VIDEO_CLEANUP
+    protected static final java.lang.String SQL_TRIGGER_VIDEO_UPDATE
+    116:116:public MediaStore$Video$Media()
+io.vov.vitamio.provider.MediaStore$Video$Thumbnails
+io.vov.vitamio.provider.MediaStore$Video$VideoColumns:
+    public static final java.lang.String DURATION
+    public static final java.lang.String ARTIST
+    public static final java.lang.String ALBUM
+    public static final java.lang.String WIDTH
+    public static final java.lang.String HEIGHT
+    public static final java.lang.String DESCRIPTION
+    public static final java.lang.String LANGUAGE
+    public static final java.lang.String LATITUDE
+    public static final java.lang.String LONGITUDE
+    public static final java.lang.String DATE_TAKEN
+    public static final java.lang.String BOOKMARK
+    public static final java.lang.String MINI_THUMB_MAGIC
+    public static final java.lang.String HIDDEN
+    public static final java.lang.String SUBTRACK
+    public static final java.lang.String AUDIO_TRACK
+io.vov.vitamio.provider.MiniThumbFile
+io.vov.vitamio.utils.Base64
+io.vov.vitamio.utils.Base64$Coder
+io.vov.vitamio.utils.Base64$Decoder
+io.vov.vitamio.utils.Base64$Encoder
+io.vov.vitamio.utils.CPU:
+    public static final int FEATURE_ARM_V5TE
+    public static final int FEATURE_ARM_V6
+    public static final int FEATURE_ARM_VFP
+    public static final int FEATURE_ARM_V7A
+    public static final int FEATURE_ARM_VFPV3
+    public static final int FEATURE_ARM_NEON
+    public static final int FEATURE_X86
+    public static final int FEATURE_MIPS
+    28:28:public CPU()
+    42:43:public static java.lang.String getFeatureString()
+    167:167:public static boolean isDroidXDroid2()
+io.vov.vitamio.utils.ContextUtils:
+    21:21:public ContextUtils()
+io.vov.vitamio.utils.Crypto
+io.vov.vitamio.utils.Device
+io.vov.vitamio.utils.FileUtils:
+    private static final java.lang.String FILE_NAME_RESERVED
+    24:24:public FileUtils()
+    28:48:public static java.lang.String getUniqueFileName(java.lang.String,java.lang.String)
+    78:81:public static java.lang.String getName(java.lang.String)
+    85:93:public static void deleteDir(java.io.File)
+io.vov.vitamio.utils.IOUtils:
+    private static final java.lang.String TAG
+    24:24:public IOUtils()
+    39:46:public static void closeSilently(android.os.ParcelFileDescriptor)
+    50:54:public static void closeSilently(android.database.Cursor)
+io.vov.vitamio.utils.Log:
+    public static final java.lang.String TAG
+    22:22:public Log()
+io.vov.vitamio.utils.ScreenResolution
+io.vov.vitamio.utils.StringUtils:
+    21:21:public StringUtils()
+    23:23:public static java.lang.String join(java.lang.Object[],java.lang.CharSequence)
+    27:39:public static java.lang.String join(java.lang.Iterable,java.lang.CharSequence)
+    43:46:public static java.lang.String fixLastSlash(java.lang.String)
+    70:75:public static java.lang.String generateTime(long)
+io.vov.vitamio.widget.CenterLayout
+io.vov.vitamio.widget.CenterLayout$LayoutParams
+io.vov.vitamio.widget.MediaController
+io.vov.vitamio.widget.MediaController$1
+io.vov.vitamio.widget.MediaController$2
+io.vov.vitamio.widget.MediaController$3
+io.vov.vitamio.widget.MediaController$MediaPlayerControl
+io.vov.vitamio.widget.MediaController$OnHiddenListener
+io.vov.vitamio.widget.MediaController$OnShownListener
+io.vov.vitamio.widget.OutlineTextView
+io.vov.vitamio.widget.VideoView
+io.vov.vitamio.widget.VideoView$1
+io.vov.vitamio.widget.VideoView$2
+io.vov.vitamio.widget.VideoView$3
+io.vov.vitamio.widget.VideoView$4
+io.vov.vitamio.widget.VideoView$5
+io.vov.vitamio.widget.VideoView$5$1
+io.vov.vitamio.widget.VideoView$6
+io.vov.vitamio.widget.VideoView$7
+io.vov.vitamio.widget.VideoView$8
+io.vov.vitamio.widget.VideoView$9
